@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hourly & Daily Weather</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/cloudy.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- MAIN SECTION STARTS HERE -->
+
+    <section class="main__app">
+      <div class="main__app__buttons">
+        <img
+          class="logo"
+          src="./assets/favicon/favpng_umbrella-icon100.png"
+          alt=""
+        />
+        <!-- <span class="material-icons hamburger__menu__left"> menu</span> -->
+        <div class="search-container">
+          <input
+            class="search__input"
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search your town"
+          />
+          <button class="search-button">Search</button>
+        </div>
+        <div class="search">
+          <span class="material-icons search__bar"> search</span>
+        </div>
+      </div>
+      <div class="hamburger__menu">
+        <div class="hamburger__menu__buttons">
+          <button class="celcius-button">°C</button>
+          <button class="fahrenheit-button">°F</button>
+        </div>
+      </div>
+      <div class="weather__banner">
+        <p class="city__name">Seattle</p>
+        <p class="main__temperature">79°</p>
+        <p class="main__weather__description">Rainy</p>
+        <div class="max__min__temperatures">
+          <p class="main__max__temperature">H:93°</p>
+          <p class="main__min__temperature">L:68°</p>
+        </div>
+      </div>
+
+      <div id="hourly-weather">
+        <h4>Hourly</h4>
+        <div class="hourly-weather-informations"></div>
+      </div>
+
+      <div id="daily-weather">
+        <h4 style="color: #fff">Daily</h4>
+        <div class="daily-weather-informations"></div>
+      </div>
+
+      <div class="details-container">
+        <div class="details-box">
+          <img src="./assets/details-asset/feels.png" alt="" />
+          <h4>Feels Like</h4>
+          <p class="feels-like">100</p>
+        </div>
+        <div class="details-box">
+          <img src="./assets/details-asset/sunset.png" alt="" />
+          <h4>Sunrise & Sunset</h4>
+          <p class="sunrise">07.40AM</p>
+          <p class="sunset">05.40PM</p>
+        </div>
+        <div class="details-box">
+          <img src="./assets/details-asset/wind.png" alt="" />
+          <h4>Wind</h4>
+          <p class="wind-value">16km/h</p>
+        </div>
+        <div class="details-box">
+          <img src="./assets/details-asset/visibility.png" alt="" />
+          <h4>Visibility</h4>
+          <p class="visibility-value">17km</p>
+        </div>
+        <div class="details-box">
+          <img src="./assets/details-asset/humidity.png" alt="" />
+          <h4>Humidity</h4>
+          <p class="humidity-value">999</p>
+        </div>
+        <div class="details-box">
+          <img src="./assets/details-asset/pressure.png" alt="" />
+          <h4>Pressure</h4>
+          <p class="pressure-value">999</p>
+        </div>
+      </div>
+    </section>
+    <!-- MAIN SECTION ENDS HERE -->
+  </body>
+  <script src="script.js"></script>
+</html>

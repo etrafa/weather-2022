@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.main__app {
+  width: 100%;
+  background: rgb(22, 94, 179);
+  background: linear-gradient(
+    174deg,
+    rgba(22, 94, 179, 1) 0%,
+    rgba(111, 186, 255, 1) 100%
+  );
+}
+
+.main__app__buttons {
+  display: flex;
+  color: #ffffff;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.weather__banner {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.city__name {
+  font-size: 32px;
+  font-weight: 400;
+}
+.main__temperature {
+  font-size: 88px;
+  font-weight: 300;
+  padding-left: 1.5rem;
+}
+.main__weather__description {
+  font-size: 18px;
+}
+
+.max__min__temperatures {
+  display: flex;
+  font-size: 18px;
+}
+
+.max__min__temperatures p:last-child {
+  margin-left: 1rem;
+}
+
+.hamburger__menu {
+  position: relative;
+}
+
+.hamburger__menu__buttons button {
+  width: 45px;
+  height: 45px;
+  margin-top: 5rem;
+  border-radius: 20%;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  font-weight: bold;
+  background-color: #060c35;
+  color: #fff;
+}
+
+.hamburger__menu__buttons button:hover {
+  background-color: #fff;
+  color: #060c35;
+}
+
+.celcius-button {
+  top: 30%;
+  left: 10%;
+}
+.fahrenheit-button {
+  top: 30%;
+  left: 80%;
+}
+
+.search__bar {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.search__input {
+  display: none;
+}
+
+.search__input-deactive {
+  width: 200px;
+  height: 44px;
+  display: block;
+}
+.search-button-deactive {
+  display: block;
+}
+
+.search-button {
+  display: none;
+  width: 200px;
+  height: 44px;
+}
+
+.search-container {
+  display: flex;
+}
+
+/* **********NEW YEAR CODES********* */
+
+#hourly-weather {
+  width: 90%;
+  height: 200px;
+  background-color: #060c35;
+  margin: 2rem auto;
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+.hourly-weather-informations {
+  display: flex;
+  overflow: scroll;
+  flex-shrink: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hourly-weather-informations::-webkit-scrollbar {
+  display: none;
+}
+
+.hourly-weather-body {
+  padding: 20px;
+  align-items: center;
+}
+
+#hourly-weather h4,
+#daily-weather h4 {
+  margin-left: 2rem;
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+
+.hourly-weather-body img {
+  width: 40px;
+  height: 40px;
+  margin-top: 0.6rem;
+}
+
+.hourly-weather-body p {
+  color: #fff;
+  font-weight: normal;
+  padding-top: 0.1rem;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 0.8rem;
+}
+
+.hourly-weather-body p:last-child {
+  padding: 0;
+}
+
+#daily-weather {
+  width: 90%;
+  background-color: #060c35;
+  margin: 2rem auto;
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.daily-weather-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.daily-weather-body img {
+  width: 40px;
+  height: 40px;
+}
+
+.details-container {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+}
+
+.details-box {
+  width: 90%;
+  height: 200px;
+  background-color: #fff;
+  border: 2px solid #060c35;
+  margin: 1rem auto;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-width: 10%;
+  height: auto;
+  transform: rotate(20deg);
+}
+
+.details-box img {
+  display: block;
+  max-width: 30%;
+  height: auto;
+  margin: 0.4rem auto;
+}
+.details-box h4 {
+  text-align: center;
+  color: #000;
+  margin-top: 1rem;
+}
+
+.details-box p {
+  text-align: center;
+  margin-top: 2rem;
+}
+.details-box:nth-child(2) p {
+  margin: 14px 0 5px 0;
+}
+
+.dailyTemperatureContainer {
+  display: flex;
+}
+.dailyTemperatureContainer p {
+  margin: 0 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .details-box img {
+    max-width: 10%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #daily-weather {
+    width: 60%;
+  }
+  #hourly-weather {
+    width: 60%;
+  }
+  .logo {
+    max-width: 5%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .details-container {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  }
+  .details-box {
+    width: 60%;
+  }
+  #daily-weather {
+    width: 40%;
+  }
+  #hourly-weather {
+    width: 40%;
+  }
+  .logo {
+    max-width: 3%;
+  }
+}
